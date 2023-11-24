@@ -1,0 +1,28 @@
+{%extends 'main.html' %}
+{% block head %} {% endblock %}
+{% block body %}
+<section class="login_part">
+    <div class="lefts">
+
+    </div>
+    <div class="rights">
+        <h1 id="wlcm1">Welcome !</h1>
+        <input type="text" placeholder="YOUR NAME " id="inputbox">
+        <input type="text" placeholder="Your email " id="inputbox">
+        <input type="password" placeholder="Your Password" id="inputbox">
+        <!-- span for creat acc / sign in  -->
+        <span>
+            <button id="sgbtn">Creat account</button>
+            <button id="lgnbtn"> Sign in</button>
+        </span>
+
+    </div>
+
+</section>
+
+<!-- link this file whit css  -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
+{% endblock %}
+
+
+{% block footer %} {% endblock %}
