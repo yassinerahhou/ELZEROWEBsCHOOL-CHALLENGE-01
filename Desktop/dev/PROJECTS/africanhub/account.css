@@ -1,0 +1,252 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.empty_navbar{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+.deatils_account{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.nav_account{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 10px;
+   grid-template-rows: 50px;
+   text-align: center;
+}
+
+/* FIRST_BTN_MYINFO */
+
+#my_info{
+    /* background-color: gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+#my_info_zone{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img_user{
+    width: 200px;
+    height: 200px;
+    background-color: #e63950;
+    border-radius: 50px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+
+.img_contain{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_email_username{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    background-color: wheat;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+
+.username_flask{
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(53,53,53,1) 0%, rgba(60,58,180,0.9864320728291317) 50%);
+    color: white;
+    justify-content: flex-start;
+    padding: 5px;
+    height: 45px;
+    /* border: 1px solid black; */
+}
+
+.email_flask{
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(53,53,53,1) 0%, rgba(60,58,180,0.9864320728291317) 50%);
+    color: white;
+    justify-content: flex-start;
+    padding: 5px;
+    height: 45px;
+    /* border: 1px solid black; */
+}
+
+.statu_flask{
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(53,53,53,1) 0%, rgba(60,58,180,0.9864320728291317) 50%);
+
+    color: white;
+    justify-content: flex-start;
+    padding: 5px;
+    height: 45px;
+    /* border: 1px solid black; */
+}
+
+
+#my_update{
+    background-color: black;
+    /* border: 1px solid white; */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#my_sec{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgb(48, 45, 45); */
+    font-weight: bold;
+    color: white;
+}
+
+#my_logout{
+    background-color: black;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+.content{
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+    height: 328px;
+    border: 1px solid black;
+}
+
+/* my_update_zone Section */
+
+#my_update_zone{
+    width: 100%;
+    height:85%;
+    border: 1px solid red;
+}
+
+.fid_post{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    height: 95%;
+}
+
+/* FOR TITLE POST */
+
+.for_title_post{
+    width: 100%;
+    height: 50px;
+    border: 1px solid grey;
+}
+p{
+    margin-top: 5px;
+}
+
+/* FOR TEXT POST */
+
+.for_text_post{
+    height: 100px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid grey;
+}
+
+.textarea_post{
+    width: 100%;
+    height: 100px;
+}
+
+.for_admin_posted_and_cat{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    border: 1px solid grey;
+}
+
+.posted{
+    width: 50%;
+    height: 40px;
+    border: 1px solid red;
+}
+
+.caty{
+    width: 50%;
+    height: 40px;
+    border: 1px solid red;
+}
+
+.img_post{
+    width: 50%;
+    height: 40px;
+    border: 1px solid red;
+}
+
+.btn_post{
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    height: 60px;
+}
+
+.btn_post button{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #353535;
+  }

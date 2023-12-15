@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9ef6662b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/account.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="empty_navbar"></div>
+
+    <div class="deatils_account">
+        <div class="nav_account">
+            <div onclick="showContent('my_info_zone')";onclick="change_bg() ;" id="my_info">ADMIN INFO</div>
+            <div onclick="showContent('my_update_zone')";onclick="change_bg() ;" id="my_update">NEW POST</div>
+            <div onclick="showContent('my_sec_zone')";onclick="change_bg() ;" id="my_sec">USERS</div>
+            <div onclick="showContent('my_logout_zone')";onclick="change_bg() ;" id="my_logout">LOG OUT</div>
+        </div>
+
+            <div class="content" id="my_info_zone">
+                <div class="img_user">
+                    <img class="img_contain" src="/static/pfp_admin.png">
+                </div>
+                <div class="img_email_username">
+                    <div class="username_flask">
+                        <!-- HERE FLASK USERNAME -->
+                        <p>SANIDA LMAFIA</p>
+                    </div>
+                    <div class="email_flask">
+                        <!-- HERE FLASK EMAIL -->
+                        <p>SANIDA234@gmail.com</p>
+                    </div>
+                    <div class="statu_flask">
+                        <!-- HERE FLASK STATU -->
+                        <p>ROLE : ADMIN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="my_update_zone">
+                <fieldset class="fid_post">
+                    <legend>ADD NEW POST</legend>
+                    <form method="POST" action="">
+                        <!-- HERE FROM FORM TITLE POST -->
+                        <p>POST TITLE</p>
+                        <div class="for_title_post">
+
+                        </div>
+                        <p>DESCRIPTION</p>
+                        <div class="for_text_post">
+                            <!-- HEREH TEXT FOR FLASK POST -->
+                            <!-- EX -->
+                            <textarea class="textarea_post">TEXT</textarea>
+                        </div>
+                        <div class="for_admin_posted_and_cat">
+                            <div class="posted">
+                                <!-- HERE FOR THE ADMIN WHO POSTED POST -->
+                                <p>POST BY :</p>
+                            </div>
+                            <div class="caty">
+                                <p>CATEGORY : public</p>
+                            </div>
+                            <div class="img_post">
+                                <!-- PLACE FOR BTN TO POST -->
+                                <input type="file">
+                            </div>
+                        </div>
+                        <div class="btn_post">
+                            <!-- PLACE FOR BTN TO POST -->
+                            <button type="submit">POST</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="content" id="my_sec_zone">
+                <table>
+                    <tr>
+                      <th>Username</th>
+                      <th>Email</th> 
+                      <th>Registred Date</th>
+                    </tr>
+                    <tr>
+                      <td>Jill</td>
+                      <td>Smith</td>
+                      <td>10/11/2018</td>
+                    </tr>
+                    <tr>
+                      <td>Eve</td>
+                      <td>Jackson</td>
+                      <td>10/11/2020</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>10/11/2022</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="content" id="my_logout_zone">
+                <p>MY LOGOUT</p>
+            </div>
+    </div>
+
+    <script>
+        function showContent(contentId) {
+      // Hide all content elements
+      var allContent = document.querySelectorAll('.content');
+      allContent.forEach(function(content) {
+        content.style.display = 'none';
+      });
+
+      // Show the selected content
+      var selectedContent = document.getElementById(contentId);
+      if (selectedContent) {
+        selectedContent.style.display = 'flex';
+      }
+    }
+
+    function change_bg(){
+	div_1 = document.getElementById('my_info_zone');
+	div_1.style.backgroundColor='gold';
+
+	div_2 = document.getElementById('my_update_zone');
+	div_2.style.backgroundColor='gold';
+
+	div_3 = document.getElementById('my_sec_zone');
+	div_3.style.backgroundColor='gold';
+
+	div_4 = document.getElementById('my_logout_zone');
+	div_4.style.backgroundColor='gold';
+
+} 
+    </script>
+    
+</body>
+</html>
